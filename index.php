@@ -7,8 +7,8 @@
     <div class="container">
 
         <div class="h2-wrap">
-            <h2>Login</h2>
         </div>
+        <h2 class="header">Waves</h2>
 
         <form action="#" method="post" class="login-form">
             <div class="input-wrapper">

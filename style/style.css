@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    width: 25%;
+    width: 30%;
     min-height: 75vh;
     margin-top: 10vh;
     display: flex;
@@ -25,16 +25,19 @@ body {
     background: #fff;
     border: 2px solid #0F2027;
     box-shadow: 0 0 32px 16px rgba(0, 0, 0, 0.25);
+    position: relative;
 }
 
 .h2-wrap {
     width: 100%;
-    height: 30vh;
+    height: 25vh;
     background: url(../img/waves.jpg), no-repeat;
     background-position: center;
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     position: relative;
+    z-index: 3;
+    overflow: visible;
 }
 
 .h2-wrap::after {
@@ -47,16 +50,18 @@ body {
     background: rgba(0, 0, 0, 0.25);
 }
 
-.h2-wrap h2 {
+.header {
     position: absolute;
-    bottom: -25%;
+    top: 15vh;
     left: 50%;
     transform: translateX(-50%);
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: #2C5364;
+    background: #254550;
     color: #fff;
+    font-family: 'Lobster Two', sans-serif;
+    letter-spacing: 1px;
     z-index: 10;
     display: flex;
     align-items: center;
