@@ -5,9 +5,7 @@
 </head>
 <body>
     <div class="container">
-
-        <div class="h2-wrap">
-        </div>
+        <div class="h2-wrap"></div>
         <h2 class="header">Waves</h2>
 
         <form action="#" method="post" class="login-form">
@@ -23,10 +21,10 @@
                 <label for="keep-signed-in">KEEP ME SIGNED IN?</label>
                 <input type="checkbox" name="keep-signed-in" id="keep-signed-in">
             </div>
-            <button type="submit">LOGIN</button>
+            <button type="submit">SIGN IN</button>
         </form>
 
-        <h2>DONT HAVE AN ACCOUNT? <a href="#">SIGN UP</a></h2>
+        <h2 class="dont-have-acc-btn">DONT HAVE AN ACCOUNT? <a href="#">SIGN UP</a></h2>
     </div>
 </body>
 </html>
