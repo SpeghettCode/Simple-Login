@@ -9,25 +9,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-body::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(../img/waves.jpg), no-repeat;
-    background-position: center;
-    background-size: cover;
-    filter: blur(1.5px);
+    padding: 5vh 0;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .container {
     width: 25%;
     min-height: 75vh;
-    margin-top: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,13 +58,18 @@ body::after {
     justify-content: center;
 }
 
-.login-form {
+.login-form,
+.signup-form {
     width: 100%;
     min-height: 10vh;
     padding: 1rem 2.5rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+}
+
+.signup-form {
+    padding: 2rem 2.5rem;
 }
 
 .input-wrapper {
@@ -88,31 +83,28 @@ body::after {
     border-bottom: 1px solid #afafaf;
     padding: 0.5rem 0rem;
     outline: 0;
-    font-size: 1rem;
+    font-size: 1.15rem;
 }
 
 .input-wrapper label {
     font-size: 0.9rem;
     color: #afafaf;
-}
-
-.input-wrapper:nth-of-type(3) {
-    flex-direction: row;
+    display: flex;
     align-items: center;
+    padding-bottom: 0.5rem;
 }
 
-.input-wrapper input[type="checkbox"] {
-    margin-left: 0.75rem;
-    cursor: pointer;
+.fa-check-circle,
+.fa-times-circle {
+    font-size: 1.35rem;
+    padding-left: 0.5rem;
+    color: #3f3f3f;
 }
 
-.input-wrapper:nth-of-type(3) label {
-    color: #000000;
-}
-
-.login-form button {
+.login-form button,
+.signup-form button {
+    border: none;
     padding: 1rem;
-    border: 3px solid #295a6e;
     background: #295a6e;
     margin-top: 1rem;
     color: #fff;
@@ -121,23 +113,84 @@ body::after {
     transition: all 0.3s ease-in-out;
 }
 
-.login-form button:hover {
-    background: none;
-    color: #295a6e;
-    font-weight: bold;
-}
-
-.dont-have-acc-btn {
+.dont-have-acc-btn,
+.already-have-acc-btn {
     font-size: 1rem;
     margin-bottom: 1rem;
     color: #afafaf;
     font-weight: 300;
 }
 
-.dont-have-acc-btn a {
+.dont-have-acc-btn a,
+.already-have-acc-btn a {
     margin-left: 0.5rem;
     text-decoration: none;
     color: #2c2c2c;
     font-weight: bold;
     letter-spacing: 0.25px;
+}
+
+.account-made,
+.error {
+    width: 100%;
+    color: #313131;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* profile */
+.profile-page {
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 5rem;
+    background: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    list-style: none;
+    margin-left: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    color: #397f9b;
+    font-size: 2rem;
+}
+
+.username {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff
+}
+
+.logout-btn {
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    background: #397f9b;
+    color: #fff;
 }
