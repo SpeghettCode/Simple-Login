@@ -1,1 +1,12 @@
-This is a simple login web app created with PHP as a way for me to practice and learn
+# Simple Login/SignUp form
+
+## Description
+
+This is a simple sign up and login web app created with PHP
+
+## SQL database dump file
+
+
+## Authors
+
+Connor Boulton
